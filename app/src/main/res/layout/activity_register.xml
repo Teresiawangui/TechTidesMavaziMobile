@@ -72,7 +72,9 @@
                 android:id="@+id/etFirstName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="First Name" />
+                android:hint="First Name"
+                android:inputType="textCapWords"
+                 />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
@@ -100,7 +102,8 @@
                 android:id="@+id/etLastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Last Name" />
+                android:hint="Last Name"
+                android:inputType="textCapWords"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
@@ -128,7 +131,8 @@
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email" />
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
@@ -156,7 +160,8 @@
                 android:id="@+id/etPhoneNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Phone Number" />
+                android:hint="Phone Number"
+                android:inputType="phone"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
@@ -178,13 +183,18 @@
             app:layout_constraintBottom_toBottomOf="@+id/imageView9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView9"
-            app:layout_constraintTop_toTopOf="@+id/imageView9">
+            app:layout_constraintTop_toTopOf="@+id/imageView9"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password" />
+                android:hint="Password"
+                android:inputType="textPassword"
+
+
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
@@ -206,13 +216,16 @@
             app:layout_constraintBottom_toBottomOf="@+id/imageView10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView10"
-            app:layout_constraintTop_toTopOf="@+id/imageView10">
+            app:layout_constraintTop_toTopOf="@+id/imageView10"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirm Password" />
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

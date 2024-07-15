@@ -17,8 +17,7 @@ class Login : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnLogin.setOnClickListener {
-            val intent = Intent(this, HomePage::class.java)
-            startActivity(intent)
+
             validateRegistration()
 
         }

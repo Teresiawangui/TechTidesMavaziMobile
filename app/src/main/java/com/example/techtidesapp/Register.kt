@@ -22,8 +22,6 @@ class Register : AppCompatActivity() {
 
         }
         binding.btnRegister.setOnClickListener {
-            val intent = Intent(this,Login::class.java)
-            startActivity(intent)
             validateRegistration()
         }
 
@@ -50,7 +48,7 @@ class Register : AppCompatActivity() {
         val phoneNo = binding.etPhoneNo.text.toString()
         if (phoneNo.isBlank()){
             formError = true
-            binding.tvContact.error = "Last name is required"
+            binding.tvContact.error = "Phone number is required"
         }
         val password = binding.etPassword.text.toString()
         if (password.isBlank()){
@@ -61,6 +59,10 @@ class Register : AppCompatActivity() {
         if (confirmPassword.isBlank()){
             formError = true
             binding.tvConfirmPassword.error = "Please confirm your password"
+        }
+        if(password!=confirmPassword){
+            formError = true
+            binding.etConfirmPassword.error  = "Password & confirmation must match!"
         }
         if (!formError){
             performRegistration(

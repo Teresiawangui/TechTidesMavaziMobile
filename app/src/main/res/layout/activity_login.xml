@@ -62,7 +62,8 @@
             android:id="@+id/etLoginName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name" />
+            android:hint="Name"
+            android:inputType="textCapWords"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
@@ -83,13 +84,15 @@
         app:layout_constraintBottom_toBottomOf="@+id/passwordImg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/passwordImg"
-        app:layout_constraintTop_toTopOf="@+id/passwordImg">
+        app:layout_constraintTop_toTopOf="@+id/passwordImg"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etLoginPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:hint="Password"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
