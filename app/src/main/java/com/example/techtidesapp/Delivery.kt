@@ -4,11 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.techtidesapp.databinding.ActivityDeliveryBinding
 
-class delivery : AppCompatActivity() {
+class Delivery : AppCompatActivity() {
     lateinit var binding: ActivityDeliveryBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
