@@ -6,6 +6,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="CheckOut"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChecking"
+        android:layout_width="568dp"
+        android:layout_height="481dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        tools:listitem="@layout/zara" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -14,57 +42,33 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="365dp" />
 
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="250dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="88dp"
-        android:backgroundTint="#E3C39D"
-        android:text="Sign Up"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvIntroduction" />
-
     <TextView
-        android:id="@+id/tvMavazi"
+        android:id="@+id/rvTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="MAVAZI"
-        android:textSize="34sp"
+        android:text="Sub-Total :$120"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/rvChecking" />
 
-    <ImageView
-        android:id="@+id/ivHomePage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMavazi"
-        app:srcCompat="@drawable/apphomepage" />
-
-    <TextView
-        android:id="@+id/tvIntroduction"
+    <Button
+        android:id="@+id/rvButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="We are mavazi offering you sustainable fashion clothes catered for your needs"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#0A2A6F"
+        android:text="Continue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintTop_toBottomOf="@+id/rvChecking" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
